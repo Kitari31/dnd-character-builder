@@ -96,7 +96,7 @@ export default function SpeciesPage() {
   );
 
   const handleContinue = () => {
-    router.push(`/creation/class?species=${selectedSpeciesId}`);
+    router.push(`/creation/classes?species=${selectedSpeciesId}`);
   };
 
   return (
@@ -138,7 +138,7 @@ export default function SpeciesPage() {
               </div>
 
               <div className="lg:h-[calc(100%-2.5rem)] lg:overflow-y-auto">
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-5">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4">
                   {species.map((item) => {
                     const isSelected = item.id === selectedSpeciesId;
 
