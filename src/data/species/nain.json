@@ -1,0 +1,13 @@
+{
+  "id": "nain",
+  "name": "Nain",
+  "role": "Peuple des montagnes",
+  "description": "Robustes, disciplinés et profondément ancrés dans leurs traditions, les nains excellent dans l’endurance.",
+  "traits": [
+    "Grande résistance",
+    "Esprit tenace",
+    "Style défensif"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#nain"
+}

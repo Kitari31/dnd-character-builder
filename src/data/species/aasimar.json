@@ -1,0 +1,12 @@
+{
+  "id": "aasimar",
+  "name": "Aasimar",
+  "role": "Héritage céleste",
+  "description": "Des êtres touchés par une puissance céleste, souvent guidés par la lumière et le destin.",
+  "traits": [
+    "Résistance sacrée",
+    "Présence marquante",
+    "Thème lumineux"
+  ],
+  "source": "official"
+}

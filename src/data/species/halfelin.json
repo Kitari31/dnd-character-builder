@@ -1,0 +1,13 @@
+{
+  "id": "halfelin",
+  "name": "Halfelin",
+  "role": "Chance vagabonde",
+  "description": "Petits mais courageux, les halfelins compensent leur taille par leur audace et leur étonnante chance.",
+  "traits": [
+    "Chance naturelle",
+    "Discrétion",
+    "Ton léger"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#halfelin"
+}
