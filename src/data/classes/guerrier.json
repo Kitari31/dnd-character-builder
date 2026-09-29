@@ -1,0 +1,14 @@
+{
+  "id": "guerrier",
+  "name": "Guerrier",
+  "role": "Maître des armes",
+  "description": "Maîtrisez toutes les armes et armures. Devenez un combattant polyvalent et redoutable.",
+  "traits": [
+    "Armes",
+    "Technique",
+    "Polyvalence"
+  ],
+  "primaryStat": "Force ou Dextérité",
+  "difficulty": "Facile",
+  "source": "official"
+}

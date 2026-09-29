@@ -1,0 +1,14 @@
+{
+  "id": "occultiste",
+  "name": "Occultiste",
+  "role": "Pacte mystérieux",
+  "description": "Lancez des sorts issus d'un savoir occulte puis scellez un pacte avec un protecteur",
+  "traits": [
+    "Pacte",
+    "Malédictions",
+    "Décharges"
+  ],
+  "primaryStat": "Charisme",
+  "difficulty": "Élevée",
+  "source": "official"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "paladin",
+  "name": "Paladin",
+  "role": "Champion sacré",
+  "description": "Par les armes et le divin, châtiez l'adversaire et protégez vos alliés",
+  "traits": [
+    "Tank",
+    "Soutien",
+    "Châtiment-divin"
+  ],
+  "primaryStat": "Force & Charisme",
+  "difficulty": "Moyenne",
+  "source": "official"
+}

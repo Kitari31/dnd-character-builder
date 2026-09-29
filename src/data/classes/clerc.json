@@ -1,0 +1,14 @@
+{
+  "id": "clerc",
+  "name": "Clerc",
+  "role": "Magie divine",
+  "description": "Invoquez la magie divine pour soigner, galvaniser ou châtier autrui",
+  "traits": [
+    "Soin",
+    "Protection",
+    "Ordre divin"
+  ],
+  "primaryStat": "Sagesse",
+  "difficulty": "Moyenne",
+  "source": "official"
+}

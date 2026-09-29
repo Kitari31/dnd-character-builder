@@ -1,0 +1,14 @@
+{
+  "id": "roublard",
+  "name": "Roublard",
+  "role": "Précision et ruse",
+  "description": "Assénez de meurtrières attaques sournoises tout en évitant adroitement les coups",
+  "traits": [
+    "Discrétion",
+    "Précision",
+    "Mobilité"
+  ],
+  "primaryStat": "Dextérité",
+  "difficulty": "facile",
+  "source": "official"
+}

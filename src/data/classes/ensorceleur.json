@@ -1,0 +1,14 @@
+{
+  "id": "ensorceleur",
+  "name": "Ensorceleur",
+  "role": "Magie innée",
+  "description": "Exploitez votre magie intrinsèque en la façonnant à votre guise",
+  "traits": [
+    "Métamagie",
+    "Style explosif",
+    "Puissance"
+  ],
+  "primaryStat": "Charisme",
+  "difficulty": "Élevée",
+  "source": "official"
+}

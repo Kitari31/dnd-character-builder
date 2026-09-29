@@ -12,7 +12,7 @@ export default function Home() {
       </p>
 
       <Link
-        href="/creation/species"
+        href="/creation/classes"
         className="px-6 py-3 bg-black text-white rounded-lg"
       >
         Créer un personnage

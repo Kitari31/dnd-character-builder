@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const species = [
   {
@@ -87,7 +87,17 @@ const species = [
 ];
 
 export default function SpeciesPage() {
+  return (
+    <Suspense fallback={<main className="min-h-screen bg-[#0b0e12] text-white">Chargement…</main>}>
+      <SpeciesSelection />
+    </Suspense>
+  );
+}
+
+function SpeciesSelection() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const selectedClass = searchParams.get("class") ?? "";
   const [selectedSpeciesId, setSelectedSpeciesId] = useState<string>("human");
 
   const selectedSpecies = useMemo(
@@ -96,7 +106,15 @@ export default function SpeciesPage() {
   );
 
   const handleContinue = () => {
-    router.push(`/creation/classes?species=${selectedSpeciesId}`);
+    const params = new URLSearchParams();
+
+    if (selectedClass) {
+      params.set("class", selectedClass);
+    }
+
+    params.set("species", selectedSpeciesId);
+
+    router.push(`/creation/backgrounds?${params.toString()}`);
   };
 
   return (
@@ -107,7 +125,7 @@ export default function SpeciesPage() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="mb-2 text-xs font-medium uppercase tracking-[0.22em] text-[#b89b6d]">
-                Création du personnage · Étape 01
+                Création du personnage · Étape 02
               </p>
 
               <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">

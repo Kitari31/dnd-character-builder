@@ -1,0 +1,14 @@
+{
+  "id": "rodeur",
+  "name": "Rôdeur",
+  "role": "Traqueur polyvalent",
+  "description": "Conjuguez l'excellence martiale, la magie sauvage et les facultés de survie",
+  "traits": [
+    "Traque",
+    "Distance",
+    "Exploration"
+  ],
+  "primaryStat": "Dextérité & Sagesse",
+  "difficulty": "Moyenne",
+  "source": "official"
+}

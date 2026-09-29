@@ -1,137 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { getClasses } from "@/lib/classes";
 
-const classes = [
-  {
-    id: "barbarian",
-    name: "Barbare",
-    role: "Puissance brute",
-    description:
-      "Les barbares sont de puissants guerriers animés par des forces primordiales qui se manifestent sous forme d'une rage.",
-    traits: ["Rage", "Resistance naturelle", "Mêlée"],
-    primaryStat: "Force",
-    difficulty: "Moyenne",
-  },
-  {
-    id: "bard",
-    name: "Barde",
-    role: "Soutien polyvalent",
-    description:
-      "Les bardes excellent dans l'art d'inspirer autrui, d'apaiser les blessures, de décourager les ennemis et de créer des illusions.",
-    traits: ["Soutien", "Musique", "Contrôle"],
-    primaryStat: "Charisme",
-    difficulty: "Élevée",
-  },
-  {
-    id: "cleric",
-    name: "Clerc",
-    role: "Magie divine",
-    description:
-      "Les clercs tirent leur pouvoir des domaines des dieux et le canalisent pour accomplir des miracles.",
-    traits: ["Soin", "Protection", "Ordre divin"],
-    primaryStat: "Sagesse",
-    difficulty: "Moyenne",
-  },
-  {
-    id: "druid",
-    name: "Druide",
-    role: "Nature et métamorphose",
-    description:
-      "Les druides canalisent les forces de la nature pour soigner, se transformer en animaux et déchaîner une destruction élémentaire.",
-    traits: ["Nature", "Métamorphose", "Contrôle"],
-    primaryStat: "Sagesse",
-    difficulty: "Élevée",
-  },
-  {
-    id: "fighter",
-    name: "Guerrier",
-    role: "Maître des armes",
-    description:
-      "Les combattants font preuve de prouesses sans précédent avec leurs armes et armures, les utilisant pour infliger et défier la mort.",
-    traits: ["Armes", "Technique", "Polyvalence"],
-    primaryStat: "Force ou Dextérité",
-    difficulty: "Facile",
-  },
-  {
-    id: "monk",
-    name: "Moine",
-    role: "Discipline martiale",
-    description:
-      "Les moines font appel à l'entraînement et à la discipline pour concentrer leur énergie intérieure, la canalisant afin de frapper vite et fort.",
-    traits: ["Mobilité", "Arts martiaux", "Discipline"],
-    primaryStat: "Dextérité & Sagesse",
-    difficulty: "Élevée",
-  },
-  {
-    id: "paladin",
-    name: "Paladin",
-    role: "Champion sacré",
-    description:
-      "Les paladins sont unis par leurs serments pour s'opposer aux forces de l'anéantissement.",
-    traits: ["Tank", "Soutien", "Châtiment-divin"],
-    primaryStat: "Force & Charisme",
-    difficulty: "Moyenne",
-  },
-  {
-    id: "ranger",
-    name: "Rôdeur",
-    role: "Traqueur polyvalent",
-    description:
-      "Les rôdeurs canalisent des pouvoirs primordiaux pour protéger le monde des ravages causés par les monstres et les tyrans.",
-    traits: ["Traque", "Distance", "Exploration"],
-    primaryStat: "Dextérité & Sagesse",
-    difficulty: "Moyenne",
-  },
-  {
-    id: "rogue",
-    name: "Roublard",
-    role: "Précision et ruse",
-    description:
-      "Les roublards misent sur la ruse, la discrétion et les vulnérabilités de leurs adversaires pour prendre le dessus en toute situation.",
-    traits: ["Discrétion", "Précision", "Mobilité"],
-    primaryStat: "Dextérité",
-    difficulty: "facile",
-  },
-  {
-    id: "sorcerer",
-    name: "Ensorceleur",
-    role: "Magie innée",
-    description:
-      "Les ensorceleurs manient une magie innée, inscrite au plus profond de leur être.",
-    traits: ["Métamagie", "Style explosif", "Puissance"],
-    primaryStat: "Charisme",
-    difficulty: "Élevée",
-  },
-  {
-    id: "warlock",
-    name: "Occultiste",
-    role: "Pacte mystérieux",
-    description:
-      "Les démonistes partent en quête de savoirs occultes et concluent des pactes avec des êtres ancestraux pour accroître leur propre puissance.",
-    traits: ["Pacte", "Malédictions", "Décharges"],
-    primaryStat: "Charisme",
-    difficulty: "Élevée",
-  },
-  {
-    id: "wizard",
-    name: "Magicien",
-    role: "Maîtrise des arcanes",
-    description:
-      "Les magiciens étudient la magie pour lancer des sorts de feu explosif, de tromperie subtile et de transformations spectaculaires.",
-    traits: ["Sorts", "Contrôle", "Connaissance"],
-    primaryStat: "Intelligence",
-    difficulty: "Moyenne",
-  },
-];
+const classes = getClasses();
 
 export default function ClassPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const selectedSpecies = searchParams.get("species") ?? "";
-  const [selectedClassId, setSelectedClassId] = useState<string>("fighter");
+  const [selectedClassId, setSelectedClassId] = useState<string>("guerrier");
 
   const selectedClass = useMemo(
     () => classes.find((item) => item.id === selectedClassId) ?? classes[0],
@@ -141,13 +18,9 @@ export default function ClassPage() {
   const handleContinue = () => {
     const params = new URLSearchParams();
 
-    if (selectedSpecies) {
-      params.set("species", selectedSpecies);
-    }
-
     params.set("class", selectedClassId);
 
-    router.push(`/creation/background?${params.toString()}`);
+    router.push(`/creation/species?${params.toString()}`);
   };
 
   return (
@@ -158,7 +31,7 @@ export default function ClassPage() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="mb-2 text-xs font-medium uppercase tracking-[0.22em] text-[#b89b6d]">
-                Création du personnage · Étape 02
+                Création du personnage · Étape 01
               </p>
 
               <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
@@ -235,15 +108,6 @@ export default function ClassPage() {
 
             {/* Right panel */}
             <aside className="flex flex-col rounded-2xl border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-5 lg:min-h-0">
-              <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-white/50">
-                  Aperçu
-                </h2>
-
-                <span className="rounded-full border border-[#b89b6d]/30 bg-[#b89b6d]/10 px-3 py-1 text-xs font-medium text-[#d8c09a]">
-                  {selectedClass.name}
-                </span>
-              </div>
 
               <div className="flex min-h-0 flex-1 flex-col gap-4">
                 {/* Visual block */}
@@ -274,6 +138,17 @@ export default function ClassPage() {
                   <p className="text-sm leading-6 text-white/70">
                     {selectedClass.description}
                   </p>
+                  {selectedClass.source === "official" && (
+                    <a
+                      href={`https://www.aidedd.org/regles-24/classes/${encodeURIComponent(selectedClass.id)}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`En savoir plus sur la classe ${selectedClass.name} — D&D 5.5 en français (nouvel onglet)`}
+                      className="mt-3 inline-block rounded text-sm font-medium text-[#b89b6d] underline underline-offset-4 transition hover:text-[#d8c09a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b89b6d]"
+                    >
+                      En savoir plus ↗
+                    </a>
+                  )}
                 </div>
 
                 {/* Extra infos */}

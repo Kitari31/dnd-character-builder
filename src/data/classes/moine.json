@@ -1,0 +1,14 @@
+{
+  "id": "moine",
+  "name": "Moine",
+  "role": "Discipline martiale",
+  "description": "Foncez dans la mêlée en esquivant les coups, pour frapper vite et fort",
+  "traits": [
+    "Mobilité",
+    "Arts martiaux",
+    "Discipline"
+  ],
+  "primaryStat": "Dextérité & Sagesse",
+  "difficulty": "Élevée",
+  "source": "official"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "druide",
+  "name": "Druide",
+  "role": "Nature et métamorphose",
+  "description": "Canalisez la magie sauvage pour soigner, changer de forme ou controler les éléments",
+  "traits": [
+    "Nature",
+    "Métamorphose",
+    "Contrôle"
+  ],
+  "primaryStat": "Sagesse",
+  "difficulty": "Élevée",
+  "source": "official"
+}
