@@ -22,7 +22,7 @@ function BackgroundSelection() {
   const selectedClass = searchParams.get("class") ?? "";
 
   const [selectedBackgroundId, setSelectedBackgroundId] =
-    useState<string>("acolyte");
+    useState<string>(() => backgrounds.find(item => item.id === searchParams.get("background"))?.id ?? "acolyte");
 
   const selectedBackground = useMemo(
     () =>
@@ -32,7 +32,7 @@ function BackgroundSelection() {
   );
 
   const handleContinue = () => {
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(searchParams.toString());
 
     if (selectedSpecies) {
       params.set("species", selectedSpecies);
@@ -45,7 +45,7 @@ function BackgroundSelection() {
     params.set("background", selectedBackgroundId);
     params.set("level", searchParams.get("level") ?? "1");
 
-    router.push(`/creation/abilities?${params.toString()}`);
+    router.push(`/creation/equipment?${params.toString()}`);
   };
 
   return (
