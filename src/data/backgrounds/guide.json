@@ -1,0 +1,24 @@
+{
+  "id": "guide",
+  "name": "Guide",
+  "role": "Exploration et survie",
+  "description": "Vous avez grandi loin des terres habitées et appris à survivre dans les régions sauvages, à voyager et à guider ceux qui s'y aventurent.",
+  "abilities": [
+    "Dextérité",
+    "Constitution",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Initié à la magie",
+    "detail": "Druide",
+    "url": "https://www.aidedd.org/feat/fr/initie-a-la-magie"
+  },
+  "skills": [
+    "Discrétion",
+    "Survie"
+  ],
+  "tool": "Outils de cartographe",
+  "theme": "Nature sauvage",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#guide"
+}

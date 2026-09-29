@@ -1,0 +1,23 @@
+{
+  "id": "soldat",
+  "name": "Soldat",
+  "role": "Discipline et combat",
+  "description": "Vous avez été formé à la guerre et avez mis cet entraînement en pratique sur le champ de bataille.",
+  "abilities": [
+    "Force",
+    "Dextérité",
+    "Constitution"
+  ],
+  "feat": {
+    "name": "Sauvagerie martiale",
+    "url": "https://www.aidedd.org/feat/fr/sauvagerie-martiale"
+  },
+  "skills": [
+    "Athlétisme",
+    "Intimidation"
+  ],
+  "tool": "Au choix : jeu",
+  "theme": "Armée et champ de bataille",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#soldat"
+}

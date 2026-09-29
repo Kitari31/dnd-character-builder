@@ -1,0 +1,23 @@
+{
+  "id": "artisan",
+  "name": "Artisan",
+  "role": "Création et savoir-faire",
+  "description": "Vous avez appris votre métier dans un atelier et développé un véritable savoir-faire ainsi qu'un œil attentif aux détails.",
+  "abilities": [
+    "Force",
+    "Dextérité",
+    "Intelligence"
+  ],
+  "feat": {
+    "name": "Façonneur",
+    "url": "https://www.aidedd.org/feat/fr/faconneur"
+  },
+  "skills": [
+    "Investigation",
+    "Persuasion"
+  ],
+  "tool": "Au choix : outils d'artisan",
+  "theme": "Atelier et création",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#artisan"
+}

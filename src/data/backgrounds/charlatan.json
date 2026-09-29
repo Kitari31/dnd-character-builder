@@ -1,0 +1,23 @@
+{
+  "id": "charlatan",
+  "name": "Charlatan",
+  "role": "Ruse et tromperie",
+  "description": "Vous avez appris à profiter de la crédulité des autres, à inventer des histoires convaincantes et à vous sortir des situations délicates.",
+  "abilities": [
+    "Dextérité",
+    "Constitution",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Doué",
+    "url": "https://www.aidedd.org/feat/fr/doue"
+  },
+  "skills": [
+    "Escamotage",
+    "Tromperie"
+  ],
+  "tool": "Matériel de contrefaçon",
+  "theme": "Mensonges et combines",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#charlatan"
+}

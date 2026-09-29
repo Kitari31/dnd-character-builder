@@ -1,0 +1,23 @@
+{
+  "id": "noble",
+  "name": "Noble",
+  "role": "Influence et autorité",
+  "description": "Vous avez grandi au milieu du pouvoir, du confort et des traditions de la noblesse, recevant une éducation privilégiée.",
+  "abilities": [
+    "Force",
+    "Intelligence",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Doué",
+    "url": "https://www.aidedd.org/feat/fr/doue"
+  },
+  "skills": [
+    "Histoire",
+    "Persuasion"
+  ],
+  "tool": "Au choix : boîte de jeux",
+  "theme": "Cour et privilèges",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#noble"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "marin",
+  "name": "Marin",
+  "role": "Mer et aventure",
+  "description": "Vous avez vécu sur les ponts des navires, affronté les tempêtes et fréquenté les nombreux ports qui bordent les mers.",
+  "abilities": [
+    "Force",
+    "Dextérité",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Bagarreur de tavernes",
+    "url": "https://www.aidedd.org/feat/fr/bagarreur-de-tavernes"
+  },
+  "skills": [
+    "Acrobaties",
+    "Perception"
+  ],
+  "tool": "Instruments de navigateur",
+  "theme": "Océan et navigation",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#marin"
+}

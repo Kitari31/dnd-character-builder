@@ -1,0 +1,24 @@
+{
+  "id": "acolyte",
+  "name": "Acolyte",
+  "role": "Foi et spiritualité",
+  "description": "Vous avez vécu au service d'un lieu sacré, étudié la religion et appris à canaliser une petite part de puissance divine.",
+  "abilities": [
+    "Intelligence",
+    "Sagesse",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Initié à la magie",
+    "detail": "Clerc",
+    "url": "https://www.aidedd.org/feat/fr/initie-a-la-magie"
+  },
+  "skills": [
+    "Intuition",
+    "Religion"
+  ],
+  "tool": "Matériel de calligraphe",
+  "theme": "Temple et dévotion",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#acolyte"
+}

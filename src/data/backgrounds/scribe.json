@@ -1,0 +1,23 @@
+{
+  "id": "scribe",
+  "name": "Scribe",
+  "role": "Écriture et précision",
+  "description": "Vous avez travaillé parmi les documents, les archives et les manuscrits, développant une écriture soignée et un grand souci du détail.",
+  "abilities": [
+    "Dextérité",
+    "Intelligence",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Doué",
+    "url": "https://www.aidedd.org/feat/fr/doue"
+  },
+  "skills": [
+    "Investigation",
+    "Perception"
+  ],
+  "tool": "Matériel de calligraphe",
+  "theme": "Archives et manuscrits",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#scribe"
+}

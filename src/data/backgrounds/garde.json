@@ -1,0 +1,23 @@
+{
+  "id": "garde",
+  "name": "Garde",
+  "role": "Vigilance et protection",
+  "description": "Vous avez passé de longues heures à surveiller les murailles, les rues ou les portes d'une cité, toujours attentif au moindre danger.",
+  "abilities": [
+    "Force",
+    "Intelligence",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Vigilant",
+    "url": "https://www.aidedd.org/feat/fr/vigilant"
+  },
+  "skills": [
+    "Athlétisme",
+    "Perception"
+  ],
+  "tool": "Au choix : boîte de jeux",
+  "theme": "Remparts et surveillance",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#garde"
+}

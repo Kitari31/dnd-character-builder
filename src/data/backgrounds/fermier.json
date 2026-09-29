@@ -1,0 +1,23 @@
+{
+  "id": "fermier",
+  "name": "Fermier",
+  "role": "Nature et endurance",
+  "description": "Vous avez grandi en travaillant la terre et en prenant soin des animaux. Cette vie vous a appris la patience et la robustesse.",
+  "abilities": [
+    "Force",
+    "Constitution",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Robuste",
+    "url": "https://www.aidedd.org/feat/fr/robuste"
+  },
+  "skills": [
+    "Dressage",
+    "Nature"
+  ],
+  "tool": "Outils de charpentier",
+  "theme": "Terre et campagne",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#fermier"
+}
