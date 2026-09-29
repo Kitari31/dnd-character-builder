@@ -9,6 +9,7 @@ const classes = getClasses();
 export default function ClassPage() {
   const router = useRouter();
   const [selectedClassId, setSelectedClassId] = useState<string>("guerrier");
+  const [selectedLevel, setSelectedLevel] = useState<number>(1);
 
   const selectedClass = useMemo(
     () => classes.find((item) => item.id === selectedClassId) ?? classes[0],
@@ -19,6 +20,7 @@ export default function ClassPage() {
     const params = new URLSearchParams();
 
     params.set("class", selectedClassId);
+    params.set("level", String(selectedLevel));
 
     router.push(`/creation/species?${params.toString()}`);
   };
@@ -35,13 +37,33 @@ export default function ClassPage() {
               </p>
 
               <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                Choisis ta classe
+                Choisis ta classe et ton niveau
               </h1>
 
               <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
                 La classe définit le style de jeu principal de ton personnage :
                 combat, magie, soutien, discrétion ou polyvalence.
               </p>
+            </div>
+            <div className="flex shrink-0 flex-col gap-2">
+              <label
+                htmlFor="character-level"
+                className="text-xs font-medium uppercase tracking-[0.18em] text-white/50"
+              >
+                Niveau du personnage
+              </label>
+              <select
+                id="character-level"
+                value={selectedLevel}
+                onChange={(event) => setSelectedLevel(Number(event.target.value))}
+                className="rounded-xl border border-[#b89b6d]/40 bg-[#151a20] px-4 py-3 text-sm font-medium text-[#f1e2c9] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b89b6d]"
+              >
+                {Array.from({ length: 20 }, (_, index) => index + 1).map((level) => (
+                  <option key={level} value={level}>
+                    Niveau {level}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </header>

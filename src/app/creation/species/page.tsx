@@ -33,6 +33,7 @@ function SpeciesSelection() {
     }
 
     params.set("species", selectedSpeciesId);
+    params.set("level", searchParams.get("level") ?? "1");
 
     router.push(`/creation/backgrounds?${params.toString()}`);
   };

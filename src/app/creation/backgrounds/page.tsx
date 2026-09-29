@@ -43,6 +43,7 @@ function BackgroundSelection() {
     }
 
     params.set("background", selectedBackgroundId);
+    params.set("level", searchParams.get("level") ?? "1");
 
     router.push(`/creation/abilities?${params.toString()}`);
   };
