@@ -1,5 +1,7 @@
 "use client";
 
+import { CreationSummary } from "@/components/creation-summary";
+
 import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { COMMON_LANGUAGE, OPTIONAL_LANGUAGES, normalizeLanguageChoices, withLanguages } from "@/lib/languages";
@@ -39,6 +41,7 @@ function LanguageSelection() {
           <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60">
             Ton personnage connaît déjà le commun. Choisis deux autres langues courantes qu’il sait parler, lire et écrire.
           </p>
+          <CreationSummary classId={searchParams.get("class")} speciesId={searchParams.get("species")} backgroundId={searchParams.get("background")} level={searchParams.get("level")} />
         </header>
 
         <div className="mt-5 grid items-start gap-5 lg:grid-cols-[1.45fr_0.9fr]">

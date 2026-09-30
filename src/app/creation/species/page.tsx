@@ -1,5 +1,7 @@
 "use client";
 
+import { CreationSummary } from "@/components/creation-summary";
+
 import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getSpecies } from "@/lib/species";
@@ -59,6 +61,7 @@ function SpeciesSelection() {
               </p>
             </div>
           </div>
+          <CreationSummary classId={selectedClass} level={searchParams.get("level")} />
         </header>
 
         {/* Main content */}

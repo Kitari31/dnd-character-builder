@@ -1,5 +1,7 @@
 "use client";
 
+import { CreationSummary } from "@/components/creation-summary";
+
 import Link from "next/link";
 import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -87,7 +89,7 @@ function EquipmentForm({ classId, className, backgroundId, backgroundName, class
         <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60">
           Choisis un équipement de classe et un équipement d’historique.
         </p>
-        <p className="mt-3 text-sm text-[#d8c09a]">{className} · {backgroundName} · Niveau {searchParams.get("level") ?? "1"}</p>
+        <CreationSummary classId={classId} speciesId={searchParams.get("species")} backgroundId={backgroundId} level={searchParams.get("level")} />
         {Number(searchParams.get("level")) > 1 && <p className="mt-2 text-xs text-white/50">Équipement de départ ; les ressources supplémentaires liées au niveau sont à définir avec ton MJ.</p>}
       </header>
 
