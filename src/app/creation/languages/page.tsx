@@ -18,14 +18,12 @@ function LanguageSelection() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [selectedIds, setSelectedIds] = useState(() => normalizeLanguageChoices(searchParams.getAll("languages")));
-  const [saved, setSaved] = useState(false);
   const complete = selectedIds.length === 2;
 
   function toggleLanguage(id: string) {
     setSelectedIds(current => current.includes(id)
       ? current.filter(value => value !== id)
       : normalizeLanguageChoices([...current, id]));
-    setSaved(false);
   }
 
   function selectionParams() {
@@ -81,11 +79,9 @@ function LanguageSelection() {
               <button type="button" className="text-sm text-white/60 hover:text-white" onClick={() => router.push(`/creation/equipment?${selectionParams().toString()}`)}>← Équipement</button>
               <button type="button" disabled={!complete} className="rounded-xl border border-[#b89b6d] bg-[#b89b6d]/10 px-5 py-3 text-sm font-semibold text-[#f1e2c9] transition hover:bg-[#b89b6d]/20 disabled:cursor-not-allowed disabled:opacity-40" onClick={() => {
                 if (!complete) return;
-                router.replace(`/creation/languages?${selectionParams().toString()}`, { scroll: false });
-                setSaved(true);
-              }}>Valider les langues</button>
+                router.push(`/creation/abilities?${selectionParams().toString()}`);
+              }}>Continuer →</button>
             </div>
-            <p role="status" className="mt-3 text-sm text-[#d8c09a]">{saved ? "Langues enregistrées." : ""}</p>
           </aside>
         </div>
       </div>
