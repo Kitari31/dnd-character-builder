@@ -62,7 +62,6 @@ function EquipmentForm({ classId, className, backgroundId, backgroundName, class
     searchParams.get("equipmentClass") === classId ? searchParams.get("classEquipmentChoice") : null));
   const [backgroundChoice, setBackgroundChoice] = useState(() => resolveEquipmentChoice(backgroundOption,
     searchParams.get("equipmentBackground") === backgroundId ? searchParams.get("backgroundEquipmentChoice") : null));
-  const [saved, setSaved] = useState(false);
 
   function selectionParams() {
     const params = new URLSearchParams(searchParams.toString());
@@ -96,14 +95,12 @@ function EquipmentForm({ classId, className, backgroundId, backgroundName, class
         <div className="space-y-5">
           <EquipmentOptions name="class-equipment" title={`Équipement de classe · ${className}`} options={classOptions}
             selected={classOption} choice={resolveEquipmentChoice(classOption, classChoice)}
-            sourceUrl={`https://www.aidedd.org/regles-24/classes/${classId}/`}
-            onSelect={id => { setClassOptionId(id); setSaved(false); }}
-            onChoice={value => { setClassChoice(value); setSaved(false); }} />
+            onSelect={id => { setClassOptionId(id); }}
+            onChoice={value => { setClassChoice(value); }} />
           <EquipmentOptions name="background-equipment" title={`Équipement d’historique · ${backgroundName}`} options={backgroundOptions}
             selected={backgroundOption} choice={resolveEquipmentChoice(backgroundOption, backgroundChoice)}
-            sourceUrl={`https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#${backgroundId}`}
-            onSelect={id => { setBackgroundOptionId(id); setSaved(false); }}
-            onChoice={value => { setBackgroundChoice(value); setSaved(false); }} />
+            onSelect={id => { setBackgroundOptionId(id); }}
+            onChoice={value => { setBackgroundChoice(value); }} />
 
         </div>
 
@@ -125,20 +122,18 @@ function EquipmentForm({ classId, className, backgroundId, backgroundName, class
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
             <button type="button" className="text-sm text-white/60 hover:text-white" onClick={() => router.push(`/creation/backgrounds?${selectionParams().toString()}`)}>← Historique</button>
             <button type="button" className={action} onClick={() => {
-              router.replace(`/creation/equipment?${selectionParams().toString()}`, { scroll: false });
-              setSaved(true);
-            }}>Valider l’équipement</button>
+              router.push(`/creation/languages?${selectionParams().toString()}`);
+            }}>Continuer →</button>
           </div>
-          <p role="status" className="mt-3 text-sm text-[#d8c09a]">{saved ? "Équipement enregistré. Tes choix sont conservés dans le lien de cette page." : ""}</p>
         </aside>
       </div>
     </div>
   </main>;
 }
 
-function EquipmentOptions({ name, title, options, selected, choice, sourceUrl, onSelect, onChoice }: {
+function EquipmentOptions({ name, title, options, selected, choice, onSelect, onChoice }: {
   name: string; title: string; options: readonly EquipmentOption[]; selected: EquipmentOption; choice: string;
-  sourceUrl: string; onSelect: (id: string) => void; onChoice: (value: string) => void;
+  onSelect: (id: string) => void; onChoice: (value: string) => void;
 }) {
   return <fieldset className={panel}>
     <legend className="px-2 text-lg font-semibold">{title}</legend>

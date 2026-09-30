@@ -195,7 +195,7 @@ function SpeciesSelection() {
                     onClick={() => router.back()}
                     className="text-sm font-medium text-white/50 transition hover:text-white"
                   >
-                    ← Retour
+                    ← Classe
                   </button>
 
                   <button
