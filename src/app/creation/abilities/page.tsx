@@ -52,7 +52,6 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
   const [bonusId, setBonusId] = useState(() =>
     searchParams.get("abilityBackground") === backgroundId
       ? bonuses.find(bonus => bonus.id === searchParams.get("abilityBonus"))?.id ?? "all" : "all");
-  const [saved, setSaved] = useState(false);
   const spent = pointsSpent(scores);
   const remaining = POINT_BUDGET - spent;
   const bonus = bonuses.find(item => item.id === bonusId) ?? bonuses[0];
@@ -60,7 +59,6 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
 
   function updateScore(id: AbilityId, delta: number) {
     setScores(current => changeScore(current, id, delta));
-    setSaved(false);
   }
 
   function selectionParams() {
@@ -88,10 +86,9 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
             </div>
             <p className="mt-2 text-sm text-white/60">Caractéristique principale de ta classe : {primaryStat}.</p>
             <div className="mt-4 flex flex-wrap gap-3">
-              {preset && <button type="button" className="rounded-xl border border-white/20 px-4 py-3 text-sm text-white/70 hover:border-white/40 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b89b6d]" onClick={() => { setScores(preset); setSaved(false); }}>Appliquer les valeurs standards · {className}</button>}
+              {preset && <button type="button" className="rounded-xl border border-white/20 px-4 py-3 text-sm text-white/70 hover:border-white/40 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b89b6d]" onClick={() => setScores(preset)}>Appliquer les valeurs standards · {className}</button>}
               <button type="button" className="rounded-xl border border-white/20 px-4 py-3 text-sm text-white/70 hover:border-white/40" onClick={() => {
                 setScores(defaultScores());
-                setSaved(false);
               }}>Réinitialiser</button>
             </div>
             <div className="mt-5 space-y-3">
@@ -126,8 +123,8 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
         <aside className={`${panel} lg:sticky lg:top-6`} aria-labelledby="summary-title">
           <section className="mb-5 border-b border-white/10 pb-5" aria-labelledby="bonus-title">
             <h2 id="bonus-title" className="text-lg font-semibold">Bonus d’historique · {backgroundName}</h2>
-            <label htmlFor="background-bonus" className="mb-2 mt-3 block text-sm text-white/70">Choix du bonus d'historique</label>
-            <select id="background-bonus" value={bonus.id} onChange={event => { setBonusId(event.target.value); setSaved(false); }} className="w-full min-w-0 rounded-xl border border-white/20 bg-[#151a20] p-3 text-sm text-white">
+            <label htmlFor="background-bonus" className="mb-2 mt-3 block text-sm text-white/70">Choix du bonus d’historique</label>
+            <select id="background-bonus" value={bonus.id} onChange={event => setBonusId(event.target.value)} className="w-full min-w-0 rounded-xl border border-white/20 bg-[#151a20] p-3 text-sm text-white">
               {bonuses.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}
             </select>
           </section>
@@ -150,11 +147,9 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
             <button type="button" className="text-sm text-white/60 hover:text-white" onClick={() => router.push(`/creation/languages?${selectionParams().toString()}`)}>← Langues</button>
             <button type="button" className={button} disabled={remaining !== 0} onClick={() => {
               if (remaining !== 0) return;
-              router.replace(`/creation/abilities?${selectionParams().toString()}`, { scroll: false });
-              setSaved(true);
-            }}>Valider les caractéristiques</button>
+              router.push(`/creation/alignment?${selectionParams().toString()}`);
+            }}>Alignement →</button>
           </div>
-          <p role="status" className="mt-3 text-sm text-[#d8c09a]">{saved ? "Caractéristiques enregistrées." : ""}</p>
         </aside>
       </div>
     </div>
