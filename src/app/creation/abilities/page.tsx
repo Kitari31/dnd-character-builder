@@ -148,7 +148,7 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
             <button type="button" className={button} disabled={remaining !== 0} onClick={() => {
               if (remaining !== 0) return;
               router.push(`/creation/alignment?${selectionParams().toString()}`);
-            }}>Alignement →</button>
+            }}>Continuer →</button>
           </div>
         </aside>
       </div>

@@ -25,7 +25,6 @@ function AlignmentSelection() {
   const characterClass = getClasses().find(item => item.id === params.get("class"));
   const background = getBackgrounds().find(item => item.id === params.get("background"));
   const [selectedId, setSelectedId] = useState(() => searchParams.get("alignment"));
-  const [saved, setSaved] = useState(false);
   const selected = ALIGNMENTS.find(item => item.id === selectedId);
   if (selected) params.set("alignment", selected.id);
   else params.delete("alignment");
@@ -64,7 +63,6 @@ function AlignmentSelection() {
                 <input type="radio" name="alignment" value={alignment.id} checked={selected?.id === alignment.id} aria-describedby={`${alignment.id}-description`}
                   className="h-4 w-4 shrink-0 accent-[#b89b6d]" onChange={() => {
                     setSelectedId(alignment.id);
-                    setSaved(false);
                   }} />
                 <span className="font-semibold">{alignment.name} <span className="text-xs text-[#d8c09a]">{alignment.short}</span></span>
               </span>
@@ -72,7 +70,6 @@ function AlignmentSelection() {
             </label>)}
           </div>
         </fieldset>
-        <p className="mt-5 text-xs leading-6 text-white/50">Résumés en français d’après les règles officielles D&D 2024. <a href={ALIGNMENT_SOURCE} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-[#d8c09a]">Lire la section sur D&D Beyond (anglais)</a>.</p>
       </section>
 
       <aside className={`${panel} lg:sticky lg:top-6`} aria-labelledby="summary-title">
@@ -85,11 +82,9 @@ function AlignmentSelection() {
           <Link className="text-sm text-white/60 hover:text-white" href={abilitiesHref}>← Caractéristiques</Link>
           <button type="button" disabled={!selected} className={`${action} disabled:cursor-not-allowed disabled:opacity-40`} onClick={() => {
             if (!selected) return;
-            router.replace(`/creation/alignment?${params.toString()}`, { scroll: false });
-            setSaved(true);
-          }}>Valider l’alignement</button>
+            router.push(`/creation/hit-points?${params.toString()}`);
+          }}>Points de vie →</button>
         </div>
-        <p role="status" className="mt-3 text-sm text-[#d8c09a]">{saved ? "Alignement enregistré." : ""}</p>
       </aside>
       </div>
     </div>
