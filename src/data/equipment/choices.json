@@ -1,0 +1,5 @@
+{
+  "instrument": ["Chalemie", "Cor", "Cornemuse", "Flûte", "Flûte de pan", "Luth", "Lyre", "Tambour", "Tympanon", "Viole"],
+  "artisan": ["Matériel d’alchimiste", "Matériel de brasseur", "Matériel de calligraphe", "Matériel de peintre", "Outils de bricoleur", "Outils de cartographe", "Outils de charpentier", "Outils de cordonnier", "Outils de forgeron", "Outils de joaillier", "Outils de maçon", "Outils de menuisier", "Outils de potier", "Outils de souffleur de verre", "Outils de tanneur", "Outils de tisserand", "Ustensiles de cuisinier"],
+  "game": ["Cartes à jouer", "Dés", "Échecs draconiques", "Jeu des dragons"]
+}

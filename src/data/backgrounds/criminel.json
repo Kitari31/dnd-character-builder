@@ -1,0 +1,23 @@
+{
+  "id": "criminel",
+  "name": "Criminel",
+  "role": "Ombres et discrétion",
+  "description": "Vous avez survécu grâce au vol, aux cambriolages ou à d'autres activités clandestines, seul ou entouré d'autres malfrats.",
+  "abilities": [
+    "Dextérité",
+    "Constitution",
+    "Intelligence"
+  ],
+  "feat": {
+    "name": "Vigilant",
+    "url": "https://www.aidedd.org/feat/fr/vigilant"
+  },
+  "skills": [
+    "Escamotage",
+    "Discrétion"
+  ],
+  "tool": "Outils de voleur",
+  "theme": "Ruelles et bas-fonds",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#criminel"
+}

@@ -1,0 +1,18 @@
+{
+  "acolyte": { "items": ["Matériel de calligraphe", "Livre de prières", "Symbole sacré", "10 feuilles de parchemin", "Robe"], "gold": 8 },
+  "artisan": { "items": ["2 sacoches", "Tenue de voyage"], "gold": 32, "choice": "artisan" },
+  "artiste": { "items": ["2 costumes", "Miroir", "Parfum", "Tenue de voyage"], "gold": 11, "choice": "instrument" },
+  "charlatan": { "items": ["Matériel de contrefaçon", "Costume", "Beaux habits"], "gold": 15 },
+  "criminel": { "items": ["2 dagues", "Outils de voleur", "Pied-de-biche", "2 sacoches", "Tenue de voyage"], "gold": 16 },
+  "ermite": { "items": ["Bâton de combat", "Matériel d’herboriste", "Sac de couchage", "Livre de philosophie", "Lampe", "3 flasques d’huile", "Tenue de voyage"], "gold": 16 },
+  "fermier": { "items": ["Serpe", "Outils de charpentier", "Trousse de soins", "Pot en fer", "Pelle", "Tenue de voyage"], "gold": 30 },
+  "garde": { "items": ["Lance", "Arbalète légère", "20 carreaux", "Lanterne à capote", "Menottes", "Carquois", "Tenue de voyage"], "gold": 12, "choice": "game" },
+  "guide": { "items": ["Arc court", "20 flèches", "Outils de cartographe", "Sac de couchage", "Carquois", "Tente", "Tenue de voyage"], "gold": 3 },
+  "marchand": { "items": ["Instruments de navigateur", "2 sacoches", "Tenue de voyage"], "gold": 22 },
+  "marin": { "items": ["Dague", "Instruments de navigateur", "Corde", "Tenue de voyage"], "gold": 20 },
+  "noble": { "items": ["Beaux habits", "Parfum"], "gold": 29, "choice": "game" },
+  "sage": { "items": ["Bâton", "Matériel de calligraphe", "Livre d’histoire", "8 feuilles de parchemin", "Robe"], "gold": 8 },
+  "scribe": { "items": ["Matériel de calligraphe", "Beaux habits", "Lampe", "3 flasques d’huile", "12 feuilles de parchemin"], "gold": 23 },
+  "soldat": { "items": ["Lance", "Arc court", "20 flèches", "Trousse de soins", "Carquois", "Tenue de voyage"], "gold": 14, "choice": "game" },
+  "voyageur": { "items": ["2 dagues", "Outils de voleur", "Sac de couchage", "2 sacoches", "Tenue de voyage"], "gold": 16, "choice": "game" }
+}

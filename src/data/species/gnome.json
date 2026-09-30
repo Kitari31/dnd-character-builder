@@ -1,0 +1,13 @@
+{
+  "id": "gnome",
+  "name": "Gnome",
+  "role": "Ingéniosité vive",
+  "description": "Curieux et malins, les gnomes aiment la découverte, la créativité et les solutions inattendues.",
+  "traits": [
+    "Esprit inventif",
+    "Petit gabarit",
+    "Touche malicieuse"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#gnome"
+}

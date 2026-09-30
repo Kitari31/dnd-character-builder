@@ -1,0 +1,51 @@
+{
+  "barbare": [
+    { "id": "a", "label": "Paquetage", "items": ["Hache à deux mains", "4 hachettes", "Sac d’explorateur"], "gold": 15 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 75 }
+  ],
+  "barde": [
+    { "id": "a", "label": "Paquetage", "items": ["Armure de cuir", "2 dagues", "Sac d’artiste"], "gold": 19, "choice": "instrument" },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 90 }
+  ],
+  "clerc": [
+    { "id": "a", "label": "Paquetage", "items": ["Chemise de mailles", "Bouclier", "Masse d’armes", "Symbole sacré", "Sac d’ecclésiastique"], "gold": 7 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 110 }
+  ],
+  "druide": [
+    { "id": "a", "label": "Paquetage", "items": ["Armure de cuir", "Bouclier", "Serpe", "Focaliseur druidique (bâton)", "Sac d’explorateur", "Kit d’herboriste"], "gold": 9 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 50 }
+  ],
+  "ensorceleur": [
+    { "id": "a", "label": "Paquetage", "items": ["Lance", "2 dagues", "Focaliseur arcanique (cristal)", "Sac d’exploration souterraine"], "gold": 28 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 50 }
+  ],
+  "guerrier": [
+    { "id": "a", "label": "Paquetage — armure lourde", "items": ["Cotte de mailles", "Épée à deux mains", "Fléau d’armes", "8 javelines", "Sac d’exploration souterraine"], "gold": 4 },
+    { "id": "b", "label": "Paquetage — armure légère", "items": ["Armure de cuir clouté", "Cimeterre", "Épée courte", "Arc long", "20 flèches", "Carquois", "Sac d’exploration souterraine"], "gold": 11 },
+    { "id": "c", "label": "Pièces d’or", "items": [], "gold": 155 }
+  ],
+  "magicien": [
+    { "id": "a", "label": "Paquetage", "items": ["2 dagues", "Focaliseur arcanique (bâton)", "Robe", "Grimoire", "Sac d’érudit"], "gold": 5 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 55 }
+  ],
+  "moine": [
+    { "id": "a", "label": "Paquetage", "items": ["Lance", "5 dagues", "Sac d’explorateur"], "gold": 11, "choice": "artisan-or-instrument" },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 50 }
+  ],
+  "occultiste": [
+    { "id": "a", "label": "Paquetage", "items": ["Armure de cuir", "Serpe", "2 dagues", "Focaliseur arcanique (orbe)", "Livre (savoir occulte)", "Sac d’érudit"], "gold": 15 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 100 }
+  ],
+  "paladin": [
+    { "id": "a", "label": "Paquetage", "items": ["Cotte de mailles", "Bouclier", "Épée longue", "6 javelines", "Symbole sacré", "Sac d’ecclésiastique"], "gold": 9 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 150 }
+  ],
+  "rodeur": [
+    { "id": "a", "label": "Paquetage", "items": ["Armure de cuir clouté", "Cimeterre", "Épée courte", "Arc long", "20 flèches", "Carquois", "Focaliseur druidique (branche de gui)", "Sac d’explorateur"], "gold": 7 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 150 }
+  ],
+  "roublard": [
+    { "id": "a", "label": "Paquetage", "items": ["Armure de cuir", "2 dagues", "Épée courte", "Arc court", "20 flèches", "Carquois", "Outils de voleur", "Sac de cambrioleur"], "gold": 8 },
+    { "id": "b", "label": "Pièces d’or", "items": [], "gold": 100 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tieffelin",
+  "name": "Tieffelin",
+  "role": "Héritage infernal",
+  "description": "Marqués par une ascendance surnaturelle, les tieffelins dégagent une aura singulière et mystérieuse.",
+  "traits": [
+    "Affinité magique",
+    "Identité forte",
+    "Ambiance mystique"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#tieffelin"
+}

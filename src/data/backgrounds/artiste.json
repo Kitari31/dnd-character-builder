@@ -1,0 +1,23 @@
+{
+  "id": "artiste",
+  "name": "Artiste",
+  "role": "Spectacle et expression",
+  "description": "Votre jeunesse a été marquée par les spectacles, la musique et les représentations. Vous êtes à votre place devant un public.",
+  "abilities": [
+    "Force",
+    "Dextérité",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Musicien",
+    "url": "https://www.aidedd.org/feat/fr/musicien"
+  },
+  "skills": [
+    "Acrobaties",
+    "Représentation"
+  ],
+  "tool": "Au choix : instrument de musique",
+  "theme": "Scène et spectacle",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#artiste"
+}

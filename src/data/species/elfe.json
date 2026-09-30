@@ -1,0 +1,13 @@
+{
+  "id": "elfe",
+  "name": "Elfe",
+  "role": "Grâce ancestrale",
+  "description": "Élégants et anciens, les elfes brillent par leur agilité, leur perception et leur lien avec la magie.",
+  "traits": [
+    "Grande agilité",
+    "Perception fine",
+    "Affinité magique"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#elfe"
+}

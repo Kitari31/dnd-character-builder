@@ -1,0 +1,23 @@
+{
+  "id": "voyageur",
+  "name": "Voyageur",
+  "role": "Débrouille et liberté",
+  "description": "Vous avez grandi dans la rue et appris à survivre grâce aux petits travaux, à votre débrouillardise et parfois au vol.",
+  "abilities": [
+    "Dextérité",
+    "Sagesse",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Chanceux",
+    "url": "https://www.aidedd.org/feat/fr/chanceux"
+  },
+  "skills": [
+    "Discrétion",
+    "Intuition"
+  ],
+  "tool": "Outils de voleur",
+  "theme": "Rues et vagabondage",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#voyageur"
+}

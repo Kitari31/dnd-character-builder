@@ -1,0 +1,23 @@
+{
+  "id": "ermite",
+  "name": "Ermite",
+  "role": "Solitude et méditation",
+  "description": "Vous avez vécu loin de la civilisation, consacrant de longues périodes à la réflexion, à la nature et aux mystères du monde.",
+  "abilities": [
+    "Constitution",
+    "Sagesse",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Guérisseur",
+    "url": "https://www.aidedd.org/feat/fr/guerisseur"
+  },
+  "skills": [
+    "Médecine",
+    "Religion"
+  ],
+  "tool": "Matériel d'herboriste",
+  "theme": "Retraite et méditation",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#ermite"
+}

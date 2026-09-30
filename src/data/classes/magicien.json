@@ -1,0 +1,14 @@
+{
+  "id": "magicien",
+  "name": "Magicien",
+  "role": "Maîtrise des arcanes",
+  "description": "Etudiez la magie arcanique et maîtrisez des sorts en tout genre",
+  "traits": [
+    "Sorts",
+    "Contrôle",
+    "Connaissance"
+  ],
+  "primaryStat": "Intelligence",
+  "difficulty": "Moyenne",
+  "source": "official"
+}

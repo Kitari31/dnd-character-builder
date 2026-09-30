@@ -1,0 +1,13 @@
+{
+  "id": "orc",
+  "name": "Orc",
+  "role": "Fureur maîtrisée",
+  "description": "Les orcs avancent avec force, ténacité et instinct, capables d’encaisser et de frapper fort.",
+  "traits": [
+    "Endurance élevée",
+    "Puissance brute",
+    "Rythme offensif"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#orc"
+}

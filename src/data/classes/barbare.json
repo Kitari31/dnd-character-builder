@@ -1,0 +1,14 @@
+{
+  "id": "barbare",
+  "name": "Barbare",
+  "role": "Puissance brute",
+  "description": "Laissez-vous portez par la rage pour déferler dans la mêlée",
+  "traits": [
+    "Rage",
+    "Resistance naturelle",
+    "Mêlée"
+  ],
+  "primaryStat": "Force",
+  "difficulty": "Moyenne",
+  "source": "official"
+}

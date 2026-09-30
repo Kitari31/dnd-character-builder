@@ -1,0 +1,13 @@
+{
+  "id": "humain",
+  "name": "Humain",
+  "role": "Polyvalence absolue",
+  "description": "Adaptables et ambitieux, les humains peuvent suivre presque toutes les voies et tous les destins.",
+  "traits": [
+    "Très polyvalent",
+    "Flexible",
+    "Bon pour débuter"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#humain"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sage",
+  "name": "Sage",
+  "role": "Étude et connaissance",
+  "description": "Vous avez consacré des années à l'étude de livres et de parchemins, accumulant des connaissances sur le monde et la magie.",
+  "abilities": [
+    "Constitution",
+    "Intelligence",
+    "Sagesse"
+  ],
+  "feat": {
+    "name": "Initié à la magie",
+    "detail": "Magicien",
+    "url": "https://www.aidedd.org/feat/fr/initie-a-la-magie"
+  },
+  "skills": [
+    "Arcanes",
+    "Histoire"
+  ],
+  "tool": "Matériel de calligraphe",
+  "theme": "Bibliothèques et savoir",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#sage"
+}

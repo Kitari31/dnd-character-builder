@@ -1,0 +1,12 @@
+[
+  { "id": "commun", "name": "Commun" },
+  { "id": "draconique", "name": "Draconique" },
+  { "id": "elfique", "name": "Elfique" },
+  { "id": "gigant", "name": "Gigant" },
+  { "id": "gnome", "name": "Gnome" },
+  { "id": "gobelin", "name": "Gobelin" },
+  { "id": "halfelin", "name": "Halfelin" },
+  { "id": "langue-des-signes", "name": "Langue des signes" },
+  { "id": "nain", "name": "Nain" },
+  { "id": "orc", "name": "Orc" }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "goliath",
+  "name": "Goliath",
+  "role": "Force des sommets",
+  "description": "Imposants et résistants, les goliaths sont forgés par la rudesse des montagnes et l’épreuve.",
+  "traits": [
+    "Puissance physique",
+    "Grande endurance",
+    "Présence imposante"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#goliath"
+}

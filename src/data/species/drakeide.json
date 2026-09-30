@@ -1,0 +1,13 @@
+{
+  "id": "drakeide",
+  "name": "Drakéide",
+  "role": "Sang draconique",
+  "description": "Descendants des dragons, fiers et puissants, marqués par leur souffle et leur prestance.",
+  "traits": [
+    "Souffle draconique",
+    "Présence forte",
+    "Style agressif"
+  ],
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-especes/#drakeide"
+}

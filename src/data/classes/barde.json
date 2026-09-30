@@ -1,0 +1,14 @@
+{
+  "id": "barde",
+  "name": "Barde",
+  "role": "Soutien polyvalent",
+  "description": "Interprétez des sorts qui inspirent et soignent vos alliées, ou envoûtent vos adversaires",
+  "traits": [
+    "Soutien",
+    "Musique",
+    "Contrôle"
+  ],
+  "primaryStat": "Charisme",
+  "difficulty": "Élevée",
+  "source": "official"
+}

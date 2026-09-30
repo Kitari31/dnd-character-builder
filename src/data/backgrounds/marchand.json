@@ -1,0 +1,23 @@
+{
+  "id": "marchand",
+  "name": "Marchand",
+  "role": "Commerce et voyage",
+  "description": "Vous avez appris à acheter, vendre et transporter des marchandises, parcourant parfois de longues distances pour exercer votre métier.",
+  "abilities": [
+    "Constitution",
+    "Intelligence",
+    "Charisme"
+  ],
+  "feat": {
+    "name": "Chanceux",
+    "url": "https://www.aidedd.org/feat/fr/chanceux"
+  },
+  "skills": [
+    "Dressage",
+    "Persuasion"
+  ],
+  "tool": "Instruments de navigateur",
+  "theme": "Commerce et caravanes",
+  "source": "official",
+  "rulesUrl": "https://www.aidedd.org/regles-24/origines-des-personnages/description-des-historiques/#marchand"
+}
