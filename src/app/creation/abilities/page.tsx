@@ -94,7 +94,6 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
                 setSaved(false);
               }}>Réinitialiser</button>
             </div>
-            <p className="mt-3 text-xs leading-5 text-white/50">Les valeurs standards 15, 14, 13, 12, 10 et 8 utilisent les 27 points. Tu peux ensuite modifier leur répartition.</p>
             <div className="mt-5 space-y-3">
               {ABILITIES.map(ability => {
                 const score = scores[ability.id];
@@ -102,7 +101,6 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
                 return <div key={ability.id} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-white/10 p-4">
                   <div>
                     <h3 className="font-medium">{ability.name}</h3>
-                    <p className="mt-1 text-xs text-white/50">Coût : {SCORE_COSTS[score]} points{score < 15 ? ` · +1 coûte ${increaseCost} point${increaseCost > 1 ? "s" : ""}` : " · Maximum de base"}</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <button type="button" className={button} aria-label={`Diminuer ${ability.name}`} disabled={score <= 8} onClick={() => updateScore(ability.id, -1)}>−</button>
@@ -128,8 +126,7 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
         <aside className={`${panel} lg:sticky lg:top-6`} aria-labelledby="summary-title">
           <section className="mb-5 border-b border-white/10 pb-5" aria-labelledby="bonus-title">
             <h2 id="bonus-title" className="text-lg font-semibold">Bonus d’historique · {backgroundName}</h2>
-            <p className="mt-2 text-sm leading-6 text-white/60">Répartis +2 et +1, ou +1 aux trois caractéristiques. Ces bonus ne coûtent aucun point.</p>
-            <label htmlFor="background-bonus" className="mb-2 mt-3 block text-sm text-white/70">Répartition des bonus</label>
+            <label htmlFor="background-bonus" className="mb-2 mt-3 block text-sm text-white/70">Choix du bonus d'historique</label>
             <select id="background-bonus" value={bonus.id} onChange={event => { setBonusId(event.target.value); setSaved(false); }} className="w-full min-w-0 rounded-xl border border-white/20 bg-[#151a20] p-3 text-sm text-white">
               {bonuses.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}
             </select>
@@ -148,7 +145,6 @@ function AbilitiesForm({ classId, className, primaryStat, backgroundId, backgrou
               </tr>;
             })}</tbody>
           </table>
-          <p className="mt-4 text-sm text-white/60">{remaining === 0 ? "Les 27 points sont répartis." : `Il reste ${remaining} point${remaining > 1 ? "s" : ""} à répartir avant de valider.`}</p>
           {Number(searchParams.get("level")) > 1 && <p className="mt-3 text-xs leading-5 text-white/50">Ces valeurs correspondent à la création au niveau 1. Les améliorations obtenues aux niveaux suivants s’ajoutent ensuite.</p>}
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
             <button type="button" className="text-sm text-white/60 hover:text-white" onClick={() => router.push(`/creation/languages?${selectionParams().toString()}`)}>← Langues</button>
