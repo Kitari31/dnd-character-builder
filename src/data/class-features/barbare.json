@@ -1,0 +1,343 @@
+{
+  "features": [
+    {
+      "id": "rage",
+      "name": "Rage",
+      "level": 1,
+      "type": "automatic",
+      "summary": "Tu peux entrer en Rage grâce à une action Bonus."
+    },
+    {
+      "id": "weapon-mastery",
+      "name": "Bottes d'arme",
+      "level": 1,
+      "type": "automatic",
+      "summary": "Tu peux utiliser les propriétés de maîtrise de certaines armes."
+    },
+    {
+      "id": "unarmored-defense",
+      "name": "Défense sans armure",
+      "level": 1,
+      "type": "automatic",
+      "summary": "Lorsque tu ne portes pas d'armure, ta Classe d'Armure dépend aussi de ta Constitution."
+    },
+
+    {
+      "id": "danger-sense",
+      "name": "Sens du danger",
+      "level": 2,
+      "type": "automatic",
+      "summary": "Tu obtiens l'Avantage à certains jets de sauvegarde de Dextérité."
+    },
+    {
+      "id": "reckless-attack",
+      "name": "Témérité",
+      "level": 2,
+      "type": "automatic",
+      "summary": "Tu peux obtenir l'Avantage sur tes attaques basées sur la Force, au prix d'un risque supplémentaire."
+    },
+
+    {
+      "id": "primal-knowledge",
+      "name": "Savoir primal",
+      "level": 3,
+      "type": "automatic",
+      "summary": "Tu obtiens une maîtrise de compétence supplémentaire et ta Rage peut renforcer certaines aptitudes."
+    },
+    {
+      "id": "subclass-choice",
+      "name": "Sous-classe de Barbare",
+      "level": 3,
+      "type": "subclass-choice",
+      "summary": "Choisis la voie suivie par ton Barbare."
+    },
+
+    {
+      "id": "asi-4",
+      "name": "Amélioration de caractéristique",
+      "level": 4,
+      "type": "feat-choice"
+    },
+
+    {
+      "id": "extra-attack",
+      "name": "Attaque supplémentaire",
+      "level": 5,
+      "type": "automatic",
+      "summary": "Tu peux attaquer deux fois au lieu d'une lorsque tu entreprends l'action Attaque."
+    },
+    {
+      "id": "fast-movement",
+      "name": "Déplacement rapide",
+      "level": 5,
+      "type": "automatic",
+      "summary": "Ta vitesse augmente de 3 m tant que tu ne portes pas d'armure lourde."
+    },
+
+    {
+      "id": "subclass-feature-6",
+      "level": 6,
+      "type": "subclass-feature"
+    },
+
+    {
+      "id": "feral-instinct",
+      "name": "Instinct sauvage",
+      "level": 7,
+      "type": "automatic",
+      "summary": "Tes instincts te permettent de réagir extrêmement rapidement."
+    },
+
+    {
+      "id": "asi-8",
+      "name": "Amélioration de caractéristique",
+      "level": 8,
+      "type": "feat-choice"
+    },
+
+    {
+      "id": "brutal-strike",
+      "name": "Coup brutal",
+      "level": 9,
+      "type": "automatic",
+      "summary": "Tu peux renoncer à l'Avantage de Témérité pour déclencher un effet supplémentaire."
+    },
+
+    {
+      "id": "subclass-feature-10",
+      "level": 10,
+      "type": "subclass-feature"
+    },
+
+    {
+      "id": "relentless-rage",
+      "name": "Rage persistante",
+      "level": 11,
+      "type": "automatic",
+      "summary": "Ta Rage peut t'empêcher de tomber inconscient."
+    },
+
+    {
+      "id": "asi-12",
+      "name": "Amélioration de caractéristique",
+      "level": 12,
+      "type": "feat-choice"
+    },
+
+    {
+      "id": "brutal-strike-13",
+      "name": "Coup brutal amélioré",
+      "level": 13,
+      "type": "automatic",
+      "summary": "Ton aptitude Coup brutal s'améliore."
+    },
+
+    {
+      "id": "subclass-feature-14",
+      "level": 14,
+      "type": "subclass-feature"
+    },
+
+    {
+      "id": "persistent-rage",
+      "name": "Rage persistante",
+      "level": 15,
+      "type": "automatic",
+      "summary": "Ta Rage devient encore plus difficile à interrompre."
+    },
+
+    {
+      "id": "asi-16",
+      "name": "Amélioration de caractéristique",
+      "level": 16,
+      "type": "feat-choice"
+    },
+
+    {
+      "id": "brutal-strike-17",
+      "name": "Coup brutal amélioré",
+      "level": 17,
+      "type": "automatic",
+      "summary": "Ton Coup brutal s'améliore une nouvelle fois."
+    },
+
+    {
+      "id": "indomitable-might",
+      "name": "Puissance indomptable",
+      "level": 18,
+      "type": "automatic",
+      "summary": "Ta Force atteint un degré de fiabilité exceptionnel."
+    },
+
+    {
+      "id": "epic-boon",
+      "name": "Faveur épique",
+      "level": 19,
+      "type": "epic-boon-choice"
+    },
+
+    {
+      "id": "primal-champion",
+      "name": "Champion primitif",
+      "level": 20,
+      "type": "automatic",
+      "summary": "Ta Force et ta Constitution augmentent jusqu'à un maximum de 25."
+    }
+  ],
+
+  "subclasses": [
+    {
+      "id": "berserker",
+      "name": "Voie du Berserker",
+      "summary": "Une voie basée sur une Rage particulièrement violente.",
+      "features": {
+        "3": [
+          {
+            "id": "frenzy",
+            "name": "Frénésie",
+            "summary": "Ta Rage augmente encore la puissance de tes attaques."
+          }
+        ],
+        "6": [
+          {
+            "id": "mindless-rage",
+            "name": "Rage aveugle",
+            "summary": "Ta Rage te protège de certains effets mentaux."
+          }
+        ],
+        "10": [
+          {
+            "id": "retaliation",
+            "name": "Représailles",
+            "summary": "Tu peux riposter lorsque quelqu'un te blesse."
+          }
+        ],
+        "14": [
+          {
+            "id": "intimidating-presence",
+            "name": "Présence intimidante",
+            "summary": "Ta présence peut terrifier les créatures proches."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "wild-heart",
+      "name": "Voie du Cœur sauvage",
+      "summary": "Une voie liée aux esprits animaux et à la nature.",
+      "features": {
+        "3": [
+          {
+            "id": "animal-speaker",
+            "name": "Orateur animal",
+            "summary": "Tu peux communiquer avec les animaux."
+          },
+          {
+            "id": "rage-of-the-wilds",
+            "name": "Rage du prédateur",
+            "summary": "Ta Rage adopte certaines propriétés animales."
+          }
+        ],
+        "6": [
+          {
+            "id": "aspect-of-the-wilds",
+            "name": "Aspect de faune",
+            "summary": "Tu adoptes durablement certaines propriétés d'un animal."
+          }
+        ],
+        "10": [
+          {
+            "id": "nature-speaker",
+            "name": "Orateur de la nature",
+            "summary": "Ton lien avec la nature s'approfondit."
+          }
+        ],
+        "14": [
+          {
+            "id": "power-of-the-wilds",
+            "name": "Puissance de la faune",
+            "summary": "Tes pouvoirs animaux deviennent plus puissants."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "world-tree",
+      "name": "Voie de l'Arbre-Monde",
+      "summary": "Une voie reliée à l'Arbre-Monde et à ses racines surnaturelles.",
+      "features": {
+        "3": [
+          {
+            "id": "vitality-of-the-tree",
+            "name": "Vitalité de l'Arbre",
+            "summary": "La force vitale de l'Arbre-Monde renforce ta Rage."
+          }
+        ],
+        "6": [
+          {
+            "id": "branches-of-the-tree",
+            "name": "Branche de l'Arbre",
+            "summary": "Les branches de l'Arbre-Monde peuvent affecter tes ennemis."
+          }
+        ],
+        "10": [
+          {
+            "id": "battering-roots",
+            "name": "Racines",
+            "summary": "Les racines de l'Arbre-Monde renforcent ta portée et ton contrôle."
+          }
+        ],
+        "14": [
+          {
+            "id": "travel-along-the-tree",
+            "name": "Voyage sur l'Arbre",
+            "summary": "Tu peux utiliser l'Arbre-Monde pour te déplacer surnaturellement."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "zealot",
+      "name": "Voie du Zélateur",
+      "summary": "Une voie alimentée par une ferveur divine.",
+      "features": {
+        "3": [
+          {
+            "id": "divine-fury",
+            "name": "Fureur divine",
+            "summary": "Une puissance divine accompagne tes attaques."
+          },
+          {
+            "id": "warrior-of-the-gods",
+            "name": "Soldat des dieux",
+            "summary": "La puissance divine te protège et t'aide au combat."
+          }
+        ],
+        "6": [
+          {
+            "id": "fanatical-focus",
+            "name": "Détermination fanatique",
+            "summary": "Ta ferveur t'aide à surmonter les effets qui pourraient t'affecter."
+          }
+        ],
+        "10": [
+          {
+            "id": "zealous-presence",
+            "name": "Présence zélée",
+            "summary": "Tu inspires tes alliés grâce à ton fanatisme."
+          }
+        ],
+        "14": [
+          {
+            "id": "rage-of-the-gods",
+            "name": "Rage des dieux",
+            "summary": "Ta Rage est soutenue par une puissance divine exceptionnelle."
+          }
+        ]
+      }
+    }
+  ]
+}

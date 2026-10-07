@@ -149,9 +149,9 @@ function HitPointsForm({ classId, className, level, die, constitution }: {
             <button type="button" className="text-sm text-white/60 hover:text-white" onClick={() => router.push(`/creation/alignment?${selectionParams().toString()}`)}>← Alignement</button>
             <button type="button" className={action} disabled={!complete} onClick={() => {
               if (!complete) return;
-              router.replace(`/creation/hit-points?${selectionParams().toString()}`, { scroll: false });
-              setSaved(true);
-            }}>Valider les points de vie</button>
+              router.push(`/creation/class-feature?${selectionParams().toString()}`);}}>
+              Continuer →
+            </button>
           </div>
           <p role="status" className="mt-3 text-sm text-[#d8c09a]">{saved ? "Points de vie enregistrés." : ""}</p>
         </aside>
